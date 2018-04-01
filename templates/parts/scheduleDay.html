@@ -1,0 +1,64 @@
+<!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+% if "type" in data:
+<td class="calendarCell" style="background-color:aliceblue">
+% else:
+<td class="calendarCell">
+% end
+
+    <div style="position:relative">
+        <div class="inOut">
+            % if "notes1" in data:
+                {{data["notes1"]}}
+            % end
+            <br>
+            % if "notes2" in data:
+                {{data["notes2"]}}
+            % end
+        </div>
+
+        <p class="subtleHeading calendarDate">{{data["date"]}}</p>
+
+        <!-- If there is a lecture number and title, show it -->
+        % if "lectureNumber" in data:
+            {{data["lectureNumber"]}}: {{data["name"]}}
+        % else:
+            {{data["name"]}}
+        % end
+
+        <!-- If there is no class, show that -->
+        % if "noClass" in data:
+            <br/>No class
+        % end
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+            % slides = data["slides"] if "slides" in data else None
+            % if slides != None:
+                <a href="{{pathToRoot}}{{data['slides']}}">
+                <span class="sidebaricon glyphicon glyphicon-blackboard" aria-hidden="true" title="pdf"></span> Slides
+                </a> 
+                (<a href="{{pathToRoot}}{{data['pdf']}}">pdf</a>)
+                <br/>
+            % end
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            % code = data["code"] if "code" in data else None
+            % if code != None:
+                <a href="{{pathToRoot}}{{data['code']}}">
+                <span class="sidebaricon glyphicon glyphicon-leaf" aria-hidden="true" title="pdf"></span> Code
+                </a> 
+                (<a href="{{pathToRoot}}{{data['zip']}}">zip</a>)
+            % end
+            
+        </p>
+
+       
+    </div>
+</td>

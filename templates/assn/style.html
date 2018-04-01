@@ -1,0 +1,137 @@
+<head>
+
+	%include templates/parts/head.html
+
+	<link rel="stylesheet" type="text/css" href="{{pathToRoot}}style-guide.css">
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	%include templates/parts/navBar.html
+
+	<div class="container">
+		<!-- Header -->
+		<div class="row">
+		    <div class="col-xs-12">
+		        <div id="pageHeader">
+		            <h1>Style Guide</h1>
+		        </div>
+		        <hr/>
+		    </div>
+		</div>
+
+		<!-- Text body -->
+		<div class="row">
+		    <div class="col-xs-12">
+		        <p>
+		            These are the general Java style qualities that we expect your programs to have in order to receive full credit.
+		            Certainly it is possible to write good code that violates these guidelines, and you may feel free to contact us if you are unclear about or disagree with some of them.
+		            But we do expect you to follow these rules (unless there is an error in this document).
+		            In most professional work environments you are expected to follow that company's style standards.
+		            Learning to carefully obey a style guide, and writing code with a group of other developers where the style is consistent among them, are valuable job skills.
+		        </p>
+
+		        <p>
+		            Oracle/Sun's <a class="popup" href="http://www.oracle.com/technetwork/java/codeconvtoc-136057.html">Official Java Coding Conventions</a> are a more comprehensive guide to proper Java programming.
+		            The practices outlined on their web site are encouraged for use in CS 106A.
+		        </p>
+
+		        <p style="margin-bottom: 2em">
+		            Work in progress.<br/>
+		        </p>
+		    </div>
+		</div>
+
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+		    <li role="presentation" class="active"><a href="#assn1" aria-controls="assn1" role="tab" data-toggle="tab">Assignment 1</a></li>
+		    <li role="presentation"><a href="#assn2" aria-controls="assn2" role="tab" data-toggle="tab">Assignment 2</a></li>
+		    <li role="presentation"><a href="#assn3" aria-controls="assn3" role="tab" data-toggle="tab">Assignment 3</a></li>
+		    <li role="presentation"><a href="#assn4" aria-controls="assn4" role="tab" data-toggle="tab">Assignment 4-5</a></li>
+		    <li role="presentation"><a href="#assn6" aria-controls="assn6" role="tab" data-toggle="tab">Assignment 6-7</a></li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+		    <div role="tabpanel" class="tab-pane fade in active" id="assn1">
+		        <%
+		            categories = [
+		                ("Whitespace and Indentation", "whitespaceIndentation"),
+		                ("Methods", "methods"),
+		                ("Control Statements", "controlStatements"),
+		                ("Comments", "comments"),
+		                ("Forbidden Java Features", "forbiddenJavaFeatures")
+		            ]
+		        
+		        	include('templates/parts/style/accordion.html', categories=categories, index=0)
+		        %>
+		    </div>
+		    <div role="tabpanel" class="tab-pane fade" id="assn2">
+		        <%
+		            categories = [
+		                ("Whitespace and Indentation", "whitespaceIndentation2"),
+		                ("Methods", "methods2"),
+		                ("Control Statements", "controlStatements2"),
+		                ("Comments", "comments2"),
+		                ("Variables", "variables2"),
+		                ("Forbidden Java Features", "forbiddenJavaFeatures2")
+		            ]
+		            include('templates/parts/style/accordion.html', categories=categories, index=1)
+		        %>
+		    </div>
+		    <div role="tabpanel" class="tab-pane fade" id="assn3">
+		        <%
+		            categories = [
+		                ("Whitespace and Indentation", "whitespaceIndentation3"),
+		                ("Methods", "methods3"),
+		                ("Control Statements", "controlStatements3"),
+		                ("Comments", "comments3"),
+		                ("Variables", "variables3"),
+		                ("Forbidden Java Features", "forbiddenJavaFeatures3")
+		            ]
+		            include('templates/parts/style/accordion.html', categories=categories, index=2)
+		        %>
+		    </div>
+		    <div role="tabpanel" class="tab-pane fade" id="assn4">
+		        <%
+		            categories = [
+		                ("Whitespace and Indentation", "whitespaceIndentation3"),
+		                ("Methods", "methods3"),
+		                ("Control Statements", "controlStatements3"),
+		                ("Comments", "comments3"),
+		                ("Variables", "variables4"),
+		                ("Exceptions", "exceptions"),
+		                ("Forbidden Java Features", "forbiddenJavaFeatures3"),
+		            ]
+		            include('templates/parts/style/accordion.html', categories=categories, index=3)
+		        %>
+		    </div>
+		    <div role="tabpanel" class="tab-pane fade" id="assn6">
+		        <%
+		            categories = [
+		                ("Whitespace and Indentation", "whitespaceIndentation3"),
+		                ("Methods", "methods3"),
+		                ("Control Statements", "controlStatements3"),
+		                ("Comments", "comments3"),
+		                ("Variables", "variables4"),
+		                ("Exceptions", "exceptions2"),
+		                ("Classes", "classes"),
+		                ("Forbidden Java Features", "forbiddenJavaFeatures3"),
+		            ]
+		            include('templates/parts/style/accordion.html', categories=categories, index=4)
+		        %>
+		    </div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){    
+			// Adds an arrow-up / arrow-down icon to open/close collapse panels
+			$('.collapse').on('show.bs.collapse', function(){
+				$(this).parent().find(".glyphicon-chevron-up").removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+			}).on('hide.bs.collapse', function(){
+				$(this).parent().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+			});
+		});
+	</script>
+</body>

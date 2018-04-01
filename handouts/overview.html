@@ -1,0 +1,1454 @@
+<head>
+
+<title>CS106A</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF8">
+
+
+<link href="./../plugins/bootstrap-custom/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./../style.css">
+
+<!-- Java Script -->
+<script src="./../plugins/jquery.min.js"></script>
+<script src="./../plugins/moment.min.js"></script>
+<script src="./../plugins/bootstrap-custom/js/bootstrap.min.js"></script>
+<script src="./../plugins/ace/ace.js" type="text/javascript"></script>
+
+
+<!-- Stanford -->
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand" href="./..//">CS106A</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+        <!--<li><a href="#">Lectures</a></li>-->
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lectures <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./../lectures/1-Welcome">1 Welcome</a></li>
+            <!--<li><a href="./../lectures/2-ControlFlow">2 Control Flow</a></li>
+            <li><a href="./../lectures/3-Decomposition">3 Decomposition</a></li>
+            <li><a href="./../lectures/4-Variables">4 Variables</a></li>
+            <li><a href="./../lectures/5-ControlFlowRevisited">5 ControlFlowRevisited</a></li>
+            <li><a href="./../lectures/6-NestedLoops">6 NestedLoops</a></li>
+            <li><a href="./../lectures/7-Methods">7 Methods</a></li>
+            <li><a href="./../lectures/8-Animation">8 Animation</a></li>
+            <li><a href="./../lectures/9-Events">9 Events</a></li>
+            <li><a href="./../lectures/10-References">10 References</a></li>
+            <li><a href="./../lectures/11-Memory">11 Memory</a></li>
+            <li><a href="./../lectures/12-TextProcessing">12 TextProcessing</a></li>
+            <li><a href="./../lectures/13-Files">13 FileReading</a></li>
+            <li><a href="./../lectures/14-ArrayLists">14 ArrayLists</a></li>
+            <li><a href="./../lectures/15-Arrays">15 Arrays</a></li>
+            <li><a href="./../lectures/16-Matrix">16 Matrix</a></li>
+            <li><a href="./../lectures/17-HashMaps">17 HashMaps</a></li>
+            <li><a href="./../lectures/18-Interactors">18-Interactors</a></li>
+            <li><a href="./../lectures/19-Classes1">19-Classes-1</a></li>
+            <li><a href="./../lectures/20-Classes2">20-Classes-2</a></li>
+            <li><a href="./../lectures/21-Practice">21-Practice</a></li>
+            <li><a href="./../lectures/22-Internet">22-Internet</a></li>
+             <li><a href="./../lectures/23-SocialNetworks">23 Social Networks</a></li>
+              <li><a href="./../lectures/24-LifeAfterCS106A">24 Life After CS106a</a></li>
+            <li><a href="./../lectures/25-Review1">25 Review 1</a></li>
+            <li><a href="./../lectures/26-Review2">26 Review 2</a></li>-->
+          </ul>
+
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Handouts <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./../handouts/1 - General Information.pdf">1 General Information</a></li>
+            <li><a href="./../handouts/2 - Course Placement.pdf">2 Course Placement</a></li>
+            <!--<li><a href="./../handouts/3 - Using Karel with Eclipse.pdf">3 Using Karel with Eclipse</a></li>
+            <li><a href="./../handouts/4 - Honor Code.pdf">4 Honor Code</a></li>
+            <li><a href="./../handouts/5 - Assignment1.pdf">5 Assignment 1</a></li>
+            <li><a href="./../handouts/6 - Submitting Work.pdf">6 Submitting Work</a></li>
+            <li><a href="./../handouts/7 - Course Communication.pdf">7 Course Communication</a></li>
+            
+            <li><a href="./../handouts/8 - Assignment2.pdf">8 Assignment 2</a></li>
+            <li><a href="./../handouts/debugger.html">9 Debugging</a></li>
+            
+            
+            <li><a href="./../handouts/10 - Assignment 3.pdf">10 Assignment 3</a></li>
+            <li><a href="./../handouts/11 - Strings Examples.pdf">11 String Examples</a></li>
+            <li><a href="./../handouts/12 - Assignment4.pdf">12 Assignment 4</a></li>
+            <li><a href="./../handouts/13 - Practice Midterm Solutions.pdf">13 Practice Midterm Soln</a></li>
+            <li><a href="./../handouts/14 - More Midterm Practice.pdf">14 More Midterm Practice</a></li>
+            <li><a href="./../handouts/15 - Exam Strategies.pdf">15 Exam Strategies</a></li>
+            <li><a href="./../handouts/16 - ArrayList.pdf">16 ArrayLists for Hangman</a></li>
+            <li><a href="./../handouts/17 - More Midterm Solutions.pdf">17 More Midterm Solutions</a></li>
+            <li><a href="./../handouts/18 - Assignment 5.pdf">18 Assignment 5</a></li>
+           
+            <li><a href="./../handouts/19 - Graphics Contest.pdf">19 Graphics Contest</a></li>
+
+
+            <li><a href="./../handouts/20 - Assignment 6.pdf">20 Assignment 6</a></li>
+            <li><a href="./../handouts/21 - Assignment 7.pdf">21 Assignment 7</a></li>-->
+            
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assignments <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           
+            <li><a href="https://goo.gl/forms/RjR4u0kIKY1uBQfq2">0 Who are you</a></li>
+            <!--<li><a href="./../assn/karel.html">1 Karel</a></li>
+            <li><a href="./../assn/simpleJava.html">2 SimpleJava</a></li>
+            <li><a href="./../assn/breakout.html">3 Breakout</a></li>
+            <li><a href="./../assn/hangman.html">4 Hangman</a></li>
+            <li><a href="./../assn/imageshop.html">5 ImageShop</a></li>
+            <li><a href="./../assn/nameSurfer.html">6 NameSurfer</a></li>
+            <li><a href="./../assn/facepamphlet.html">7 FacePamphlet</a></li>
+            <li class="divider"></li>
+            <li><a href="./../assn/style.html">Style Guide</a></li>
+            <li><a href="./../starterCode/GraphicsContest.zip">Graphics Contest Project</a></li>-->
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Examples <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./../examples/stepUp.html">Step Up</a></li>
+            <!--<li><a href="./../examples/place100.html">Place 100</a></li>
+            <li><a href="./../examples/beeperLine.html">Beeper Line</a></li>
+            <li><a href="./../examples/invert.html">Invert</a></li>
+            <li><a href="./../examples/restaurant.html">Restaurant</a></li>
+            <li><a href="./../examples/carbonDating.html">Carbon Dating</a></li>
+            <li><a href="./../examples/emc2.html">E=MC2</a></li>
+            
+            <li><a href="./../examples/stringArt.html">String Art</a></li>
+            <li><a href="./../examples/averageMethod.html">Average Method</a></li>
+            <li><a href="./../examples/goCenter.html">Center Move Rect</a></li>-->
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sections <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a>None yet</a></li>
+              <!--%include templates/parts/sectionMaterialsDropdownList.html
+              <li class="divider"></li>
+             <li><a href="https://cs198.stanford.edu/cs198/auth/section/SwitchSection.aspx">Late Section Signup</a></li>
+              <li><a href="https://cs198.stanford.edu/cs198/auth/section/RemoteSignup.aspx">Remote SCPD Signup</a></li> 
+              <li><a href="https://cs198.stanford.edu/cs198/auth/section/DropClass.aspx">Drop Section</a></li>
+              <li><a href="https://cs198.stanford.edu/cs198/auth/default.aspx">View My Section</a></li>
+              <li><a href="https://cs198.stanford.edu/cs198/auth/section/ViewSections.aspx">View All Sections</a></li>-->
+          </ul>
+          </ul>
+        </li>
+
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="">Nothing Yet</a></li>
+          </ul>
+        </li>-->
+       
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./../schedule.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Schedule</a></li>
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+	<div class="container">
+			
+		<!-- Header -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="pageHeader">
+					<h1>
+						Course Schedule
+					</h1>
+					
+
+				</div>
+				<hr/>
+
+				<!--<center>
+				<img style="width:80%" src="./../img/overview/overview.png">	
+			</center>-->
+			</div>
+		</div>
+
+			
+
+		<!--<div class="row">
+			<div class="col-sm-12">
+				<p>
+					In CS106B you are going to learn great things! The main objective of the course is to learn how to model and solve complex problems with computers.
+				</p>
+
+				<hr/>
+			</div>
+		</div>-->
+		
+		
+				
+		<div class="row">
+			<div class="col-sm-12">
+				<p>
+					The schedule is subject to change by the management at any time.
+				</p>
+                                
+				<p>
+<!--
+
+    Assns:
+    1. Karel
+    2. Simple Java
+    3. Breakout
+    4. Hangman
+    5. Yahtzee
+    6. NameSurfer
+    7. FacePamphlet
+-->
+
+<div class="table-responsive">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th style="col-sm-3">Week</th>
+<th style="col-sm-3">Monday</th>
+<th style="col-sm-3">Wednesday</th>
+<th style="col-sm-3">Friday</th>
+</tr>
+</thead>
+
+<!-- Week 1 -->
+<tr>
+<td class="calendarWeekCell">1</td>
+<!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 2nd</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            1: Welcome to CS106A!
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+                <a href="./../lectures/1.pptx">
+                <span class="sidebaricon glyphicon glyphicon-blackboard" aria-hidden="true" title="pdf"></span> Slides
+                </a> 
+                (<a href="./../lectures/1.pdf">pdf</a>)
+                <br/>
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+                <a href="./../lectures/1.java">
+                <span class="sidebaricon glyphicon glyphicon-leaf" aria-hidden="true" title="pdf"></span> Code
+                </a> 
+                (<a href="./../lectures/1.zip">zip</a>)
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Karel Ch. 1-3
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 4th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            2: Control Flow
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Karel Ch. 4-6
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 6th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            3: Decomposition
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td></tr>
+
+<!-- Week 2 -->
+<tr>
+<td class="calendarWeekCell">2</td>
+<!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Java Ch 1-3
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 9th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            4: Intro to Java
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 3
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 11th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            5: Control Flow Revisited
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+                Read: Chapter 4
+            <br>
+                Due: Assn #1
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 13th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            6: Graphics
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td></tr>
+
+
+<!-- Week 3 -->
+<tr>
+<td class="calendarWeekCell">3</td>
+<!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 5
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 16th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            7: Methods Revisited
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 7
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 18th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            8: Tracing Programs
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 6.1
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 20th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            9: Animation
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td></tr>
+
+<!-- Week 4 -->
+<tr>
+<td class="calendarWeekCell">4</td>
+<!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+                Read: Chapter 10.1-10.4
+            <br>
+                Due: Assn #2
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 23rd</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            10: Events
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 7
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 25th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            11: References
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 8.1-8.4
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 27th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            12: Text
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td></tr>
+
+<!-- Week 5 -->
+<tr>
+<td class="calendarWeekCell">5</td>
+<!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 8.5
+        </div>
+
+        <p class="subtleHeading calendarDate">Apr 30th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            13: Files
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 11.1-11.8
+        </div>
+
+        <p class="subtleHeading calendarDate">May 2nd</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            14: Arrays
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+                Read: Chapter 12.4
+            <br>
+                Due: Assn #3
+        </div>
+
+        <p class="subtleHeading calendarDate">May 4th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            15: ArrayLists
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td></tr>
+
+<!-- Week 6 -->
+<tr>
+<td class="calendarWeekCell">6</td>
+<!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell" style="background-color:aliceblue">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Midterm 7-9pm
+        </div>
+
+        <p class="subtleHeading calendarDate">May 7th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            Midterm Day
+
+        <!-- If there is no class, show that -->
+            <br/>No class
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 12
+        </div>
+
+        <p class="subtleHeading calendarDate">May 9th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            16: ArrayLists Redux
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 11
+        </div>
+
+        <p class="subtleHeading calendarDate">May 11th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            17: Matricies
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td></tr>
+<tr>
+
+<!-- Week 7 -->
+<td class="calendarWeekCell">7</td>
+<!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+                Chapter 13
+            <br>
+                Due: Assn #4
+        </div>
+
+        <p class="subtleHeading calendarDate">May 14th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            18: HashMaps
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 10.7-10.8
+        </div>
+
+        <p class="subtleHeading calendarDate">May 16th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            19: Interactors
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Chapter 10.5-10.8
+        </div>
+
+        <p class="subtleHeading calendarDate">May 18th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            20: Variable Type Design
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td></tr>
+
+<!-- Week 8 -->
+<tr>
+<td class="calendarWeekCell">8</td>
+<!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+                Read: Chapter 10.5-10.8
+            <br>
+                Due: Assn #5
+        </div>
+
+        <p class="subtleHeading calendarDate">May 21st</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            21: Classes
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                
+        </div>
+
+        <p class="subtleHeading calendarDate">May 23rd</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            22: Data Visualization
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                
+        </div>
+
+        <p class="subtleHeading calendarDate">May 25th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            23: The Internet
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td></tr>
+
+<!-- Week 9 -->
+<tr>
+<td class="calendarWeekCell">9</td>
+<!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell" style="background-color:aliceblue">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+        </div>
+
+        <p class="subtleHeading calendarDate">May 28th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            Memorial Day
+
+        <!-- If there is no class, show that -->
+            <br/>No class
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Due: Assn #6
+        </div>
+
+        <p class="subtleHeading calendarDate">May 30th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            24: Clients
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Karel Ch. 1-3
+        </div>
+
+        <p class="subtleHeading calendarDate">June 1st</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            25: Review
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td></tr>
+
+
+<!-- Week 10 -->
+<tr>
+<td class="calendarWeekCell">10</td>
+<!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Read: Karel Ch. 1-3
+        </div>
+
+        <p class="subtleHeading calendarDate">June 4th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            26: Last lecture
+
+        <!-- If there is no class, show that -->
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell" style="background-color:aliceblue">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Due: Assn #7
+        </div>
+
+        <p class="subtleHeading calendarDate">June 6th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            Dead Day
+
+        <!-- If there is no class, show that -->
+            <br/>No class
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td><!--
+    Template that renders a single cell for a single lecture day.  Assumes a
+    "day" parameter with fields specified in the project README.
+    -->
+<td class="calendarCell" style="background-color:aliceblue">
+
+    <div style="position:relative">
+        <div class="inOut">
+            <br>
+                Final: 8:30-11:30am
+        </div>
+
+        <p class="subtleHeading calendarDate">June 8th</p>
+
+        <!-- If there is a lecture number and title, show it -->
+            Final Exam
+
+        <!-- If there is no class, show that -->
+            <br/>No class
+
+        <br/><br/>
+        <p>
+            <!-- slides -->
+            <!-- If there are slides, show them -->
+
+            
+            <!-- code -->
+            <!-- If there is code, show it -->
+            
+        </p>
+
+       
+    </div>
+</td></tr>
+
+</table>
+</div>
+				</p>
+				<!--<hr/>-->
+			</div>
+		</div>
+
+		<!--<div class="row">
+			<div class="col-sm-12">
+				<h2>
+					Discussion Sections
+				</h2>
+				<p>
+					In addition to lecture, you must sign up for a weekly 50-minute section. In order to take
+CS 106B, you must sign up for a section between 5:00P.M., Thursday, January 7, and the
+close of enrollments at 5:00P.M. on Sunday, January 10. Please use the signup form at
+<a href="http://cs198.stanford.edu/section/">http://cs198.stanford.edu/section/</a>. Important note: Do not use Axess to sign
+up for sections; section enrollments made through Axess are simply ignored.
+				</p>
+				<hr/>
+			</div>
+		</div>
+
+		<div class="row" id="grades">
+			<div class="col-sm-12">
+				<h2>
+					Grades
+				</h2>
+				<p>
+					Your final grade in this course will be calculated using the following weights:
+				</p>
+				<div class="well" style="width:280px">
+					<h4>Weights</h4>
+					<table class="table table-condensed" style="margin-bottom:0px;">
+						<tbody>
+							<tr>
+								<td style="width: 180px">Section Participation</td>
+								<td>10%</td>
+							</tr>
+							<tr>
+								<td style="width: 120px">Programs</td>
+								<td>50%</td>
+							</tr>
+							<tr>
+								<td style="width: 120px">Midterm</td>
+								<td>15%</td>
+							</tr>
+							<tr>
+								<td style="width: 120px">Final</td>
+								<td>25%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p>
+					
+					Each of the exams is scaled to take account of the difficulty of the exam, which is nearly
+impossible to assess in advance. The other components and the final grade are not
+curved. If everyone does brilliantly in this class, everyone gets an A.
+				</p>
+				<hr/>
+			</div>
+		</div>
+
+		
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>
+					Programming Assignments
+				</h2>
+				<p>
+					CS 106B requires seven programming assignments, which are due on the dates given in
+the syllabus. Except for Assignment #7 (which is due at the very end of the quarter),
+your section leader will grade each of your assignments and then discuss how well you
+have done (and how you can improve on future assignments) in an interactive,
+one-on-one session. Assignments are graded separately for functionality and style.
+				</p>
+				<hr/>
+			</div>
+		</div>
+			
+		<div class="row">
+			<div class="col-sm-8">
+			<h2>
+				Late Policy
+			</h2>
+		</div>
+			<div class="col-sm-9">
+				
+
+				<div class="subsection">
+					
+					<p>
+						Each of the assignments is due at 5:00P.M. on the day specified in the syllabus.
+Assignments are submitted electronically using the procedure described in the first
+assignment. Important note: all assignments are due at 5:00P.M. sharp on the dates
+indicated on the assignment handout. Assignments submitted after 5:00 will be
+considered late.
+					</p>
+					<p>
+						Because each of you will probably come upon some time during the quarter where so
+much work piles up that you need a little extra time, every student begins the quarter with
+three free “late days.” To avoid any ambiguity, a “day” is defined as a class day. Thus, if
+your assignment was due on Friday but turned in the following Monday, that assignment
+would be one day late. Note: You cannot use late days on Assignment #7, which is due at the end of the quarter. After your late days for the quarter are exhausted, programs are assessed a late
+penalty of one category point per late day used (a ✓+ turns into a ✓, and so forth). Late
+days are valuable, and it pays to keep some around for the harder assignments toward the
+end of the quarter. In all cases, assignments must be turned in within a calendar week of
+their published due date.
+					</p>
+
+					<p>
+						In special circumstances (such as extended medical problems or other emergencies),
+extensions may be granted beyond the late days. To request an extension, send e-mail to
+the TA (Megan Faulk <mfaulk@stanford.edu>) no later than 24 hours before the
+program is due. Only the TA is authorized to approve such extensions. In particular, do
+not ask your section leader.
+					</p>
+				</div>
+
+				
+
+				
+
+			</div>
+			<div class="col-sm-3">
+				
+				<div class="faq well">
+					<h4 class="subheading">How Many Late Days?</h4>
+					<p>
+						Three late days. A “day” is defined as a class day.
+					</p>
+
+				</div>
+
+			</div>
+
+		</div>-->
+
+
+	
+
+
+
+<div class="row">
+	<div class="col-md-12">
+		<hr>
+
+		<div class="footer">
+			<p class="pull-left">
+				&#169; Stanford 2018 &#124; Created by Chris Piech.
+				CS106A has been developed over decades by many talented teachers. 
+			</p>
+		</div>
+	</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74362126-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	</div>
+
+	<script type="text/javascript">
+		$( ".moment" ).each(function( i ) {
+			var date = $(this).html()
+
+			var fromStr = moment(date, "YYYYMMDD").fromNow()
+
+			$(this).html(fromStr)
+		  });
+		//alert(moment("20160101", "YYYYMMDD").fromNow())
+	</script>
+
+</body>

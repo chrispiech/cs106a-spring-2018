@@ -1,0 +1,338 @@
+<!--
+
+    Assns:
+    1. Karel
+    2. Simple Java
+    3. Breakout
+    4. Hangman
+    5. Yahtzee
+    6. NameSurfer
+    7. FacePamphlet
+-->
+
+<div class="table-responsive">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th style="col-sm-3">Week</th>
+<th style="col-sm-3">Monday</th>
+<th style="col-sm-3">Wednesday</th>
+<th style="col-sm-3">Friday</th>
+</tr>
+</thead>
+
+<!-- Week 1 -->
+<tr>
+<td class="calendarWeekCell">1</td>
+<%
+  data = {
+    "lectureNumber" : 1,
+    "date" : "Apr 2nd",
+    "name" : "Welcome to CS106A!",
+    "slides" : "lectures/1.pptx",
+    "pdf" : "lectures/1.pdf",
+    "code" : "lectures/1.java",
+    "zip" : "lectures/1.zip"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 2,
+    "date" : "Apr 4th",
+    "name" : "Control Flow",
+    "notes2" : "Read: Karel Ch. 1-3"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 3,
+    "date" : "Apr 6th",
+    "name" : "Decomposition",
+    "notes2" : "Read: Karel Ch. 4-6"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+%>
+</tr>
+
+<!-- Week 2 -->
+<tr>
+<td class="calendarWeekCell">2</td>
+<%
+  data = {
+    "lectureNumber" : 4,
+    "date" : "Apr 9th",
+    "name" : "Intro to Java",
+    "notes2" : "Read: Java Ch 1-3"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 5,
+    "date" : "Apr 11th",
+    "name" : "Control Flow Revisited",
+    "notes2" : "Read: Chapter 3"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 6,
+    "date" : "Apr 13th",
+    "name" : "Graphics",
+    "notes1" : "Read: Chapter 4",
+    "notes2" : "Due: Assn #1"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+%>
+</tr>
+
+
+<!-- Week 3 -->
+<tr>
+<td class="calendarWeekCell">3</td>
+<%
+  data = {
+    "lectureNumber" : 7,
+    "date" : "Apr 16th",
+    "name" : "Methods Revisited",
+    "notes2" : "Read: Chapter 5"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 8,
+    "date" : "Apr 18th",
+    "name" : "Tracing Programs",
+    "notes2" : "Read: Chapter 7"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 9,
+    "date" : "Apr 20th",
+    "name" : "Animation",
+    "notes2" : "Read: Chapter 6.1"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+%>
+</tr>
+
+<!-- Week 4 -->
+<tr>
+<td class="calendarWeekCell">4</td>
+<%
+  data = {
+    "lectureNumber" : 10,
+    "date" : "Apr 23rd",
+    "name" : "Events",
+    "notes1" : "Read: Chapter 10.1-10.4",
+    "notes2" : "Due: Assn #2"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 11,
+    "date" : "Apr 25th",
+    "name" : "References",
+    "notes2" : "Read: Chapter 7"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 12,
+    "date" : "Apr 27th",
+    "name" : "Text",
+    "notes2" : "Read: Chapter 8.1-8.4"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+%>
+</tr>
+
+<!-- Week 5 -->
+<tr>
+<td class="calendarWeekCell">5</td>
+<%
+  data = {
+    "lectureNumber" : 13,
+    "date" : "Apr 30th",
+    "name" : "Files",
+    "notes2" : "Read: Chapter 8.5"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 14,
+    "date" : "May 2nd",
+    "name" : "Arrays",
+    "notes2" : "Read: Chapter 11.1-11.8"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 15,
+    "date" : "May 4th",
+    "name" : "ArrayLists",
+    "notes1" : "Read: Chapter 12.4",
+    "notes2" : "Due: Assn #3"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+%>
+</tr>
+
+<!-- Week 6 -->
+<tr>
+<td class="calendarWeekCell">6</td>
+<%
+  data = {
+    "type":"exam",
+    "date" : "May 7th",
+    "name" : "Midterm Day",
+    "noClass" : True,
+    "notes2" : "Midterm 7-9pm"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 16,
+    "date" : "May 9th",
+    "name" : "ArrayLists Redux",
+    "notes2" : "Read: Chapter 12"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 17,
+    "date" : "May 11th",
+    "name" : "Matricies",
+    "notes2" : "Read: Chapter 11"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+%>
+</tr>
+<tr>
+
+<!-- Week 7 -->
+<td class="calendarWeekCell">7</td>
+<%
+  data = {
+    "lectureNumber" : 18,
+    "date" : "May 14th",
+    "name" : "HashMaps",
+    "notes1" : "Chapter 13",
+    "notes2" : "Due: Assn #4"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 19,
+    "date" : "May 16th",
+    "name" : "Interactors",
+    "notes2" : "Read: Chapter 10.7-10.8"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 20,
+    "date" : "May 18th",
+    "name" : "Variable Type Design",
+    "notes2" : "Read: Chapter 10.5-10.8"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+%>
+</tr>
+
+<!-- Week 8 -->
+<tr>
+<td class="calendarWeekCell">8</td>
+<%
+  data = {
+    "lectureNumber" : 21,
+    "date" : "May 21st",
+    "name" : "Classes",
+    "notes1" : "Read: Chapter 10.5-10.8",
+    "notes2" : "Due: Assn #5"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 22,
+    "date" : "May 23rd",
+    "name" : "Data Visualization",
+    "notes2" : ""
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 23,
+    "date" : "May 25th",
+    "name" : "The Internet",
+    "notes2" : ""
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+%>
+</tr>
+
+<!-- Week 9 -->
+<tr>
+<td class="calendarWeekCell">9</td>
+<%
+  data = {
+    "date" : "May 28th",
+    "name" : "Memorial Day",
+    "noClass" : True,
+    "type" : "holiday"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 24,
+    "date" : "May 30th",
+    "name" : "Clients",
+    "notes2" : "Due: Assn #6"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "lectureNumber" : 25,
+    "date" : "June 1st",
+    "name" : "Review",
+    "notes2" : "Read: Karel Ch. 1-3"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+%>
+</tr>
+
+
+<!-- Week 10 -->
+<tr>
+<td class="calendarWeekCell">10</td>
+<%
+  data = {
+    "lectureNumber" : 26,
+    "date" : "June 4th",
+    "name" : "Last lecture",
+    "notes2" : "Read: Karel Ch. 1-3"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "date" : "June 6th",
+    "name" : "Dead Day",
+    "noClass" : True,
+    "type" : "holiday",
+    "notes2" : "Due: Assn #7"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+
+  data = {
+    "date" : "June 8th",
+    "name" : "Final Exam",
+    "noClass" : True,
+    "type" : "exam",
+    "notes2" : "Final: 8:30-11:30am"
+  }
+  include('templates/parts/scheduleDay.html', data=data)
+%>
+</tr>
+
+</table>
+</div>

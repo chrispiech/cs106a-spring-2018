@@ -1,0 +1,110 @@
+<head>
+
+	%include templates/parts/head.html
+
+
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	%include templates/parts/navBar.html
+
+	<!-- Main Content -->
+	<div class="container">
+
+		<!-- Header -->
+		<div id="pageHeader">
+			<h1>
+				Carbon Dating
+			</h1>
+			<p>
+				Problem written by Chris Piech
+			</p>
+			
+
+		</div>
+		<hr/>
+
+		<div class="row">
+			<div class="col-md-12">
+				<p>
+					You probably have seen or read news stories about fascinating ancient artifacts. At an archaeological dig a piece of wooden tool is unearthed and the archaeologist finds it to be 5,000 years old.  A child mummy is found high in the Andes and the archaeologist says the child lived more than 2,000 years ago. Ever wondered how they know?
+				</p>
+				<p>Carbon dating is a way of determining the age of certain archaeological artifacts of biological origin. Your job is to write a program that figures out how old a sample is.
+				</p>
+
+				<p>
+					<center>
+						<img style="width:500px" src="{{pathToRoot}}img/projects/carbonDating/real.jpg">	
+						<p style="text-align:center"><i>This is a real velociraptor fossil. It's very old.</i></p>
+					</center>
+				</p>
+
+				<p>When an orgnanism is alive, its matter will have a constant amount of a special type of carbon called carbon-14 (c14). It turns out all living things have the same fraction: wood, mammoths, your body right now... small cats... all have the same amount.</p>
+				
+
+				<p>An important property of c14 is that it dissapears at a constant rate: every 5,700 years the amount of c14 is halfed (its half life is 5,700 years). For example, if one starts with 100% of the natural occurence of c14:
+				<p> &nbsp;&nbsp;&nbsp;&nbsp;In 5,700 years we expect there will only be 50% left. 
+				<br/> &nbsp;&nbsp;&nbsp;&nbsp;In 11,400 years we would expect there will only have 25% left. 
+				<br/> &nbsp;&nbsp;&nbsp;&nbsp;And so on...</p>
+
+				<p>When an organism is alive, it keeps replentishing its supply of c14 to the natural level. But when it dies (moment of silence), the amount of c14 starts to decrease. By testing how much c14 is left, scientists know how how long a dead thing has been dead for. Good times.</p>
+				
+			</div>
+		</div>
+		
+
+			<div class="row">
+			<div class="col-md-12">
+				<h2>Solution</h2>
+
+
+<pre id="editor" style="height:620px">
+public class CarbonDatingSolnConst extends ConsoleProgram {
+
+	private static final double LIVING_C14 = 13.6;
+	private static final int HALF_LIFE = 5730;
+
+	public void run() {
+		// print some introduction information
+		println("Radioactive molecule = C14");
+		println("Halflife = " + HALF_LIFE + " years");
+		println("C14 in living organisms = " + LIVING_C14 + " dpm");
+		println("-----");
+		println(""); // adds an extra new-line
+
+		// repeats forever
+		while(true) {
+			// read the amount of C14 from the user
+			double amount = readDouble("Amount of C14 in your sample: ");
+
+			// Half life formula to calculate the age:
+			// age = log(fractionLeft) / log(0.5) * 5730
+			// fractionLeft = amountCO2Left / livingCO2Amount
+			
+			double fractionLeft = amount / LIVING_C14;
+			double age = Math.log(fractionLeft) / Math.log(0.5) * HALF_LIFE;
+			age = Math.round(age);
+			println("Your sample is " + age + " years old.");
+			
+			println("");
+		}
+
+	}
+}</pre>
+
+<script src="{{pathToRoot}}plugins/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+   editor.setTheme('ace/theme/eclipse');
+   editor.getSession().setMode("ace/mode/java");
+   editor.setReadOnly(true);
+   editor.renderer.setShowGutter(false); 
+    /*editor.setTheme("ace/theme/eclipse");
+    editor.getSession().setMode("ace/mode/java");*/
+</script>
+		
+		%include templates/parts/footer.html
+
+	</div>
+</body>

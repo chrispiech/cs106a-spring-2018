@@ -1,0 +1,249 @@
+<head>
+
+	%include templates/parts/head.html
+
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	%include templates/parts/navBar.html
+
+	<div class="container">
+
+		
+			
+		<!-- Header -->
+		<div class="row">
+			<div class="col-sm-12">
+				<!--<div class="alert alert-success"><b>New materials!</b> On Wed (Nov 9th) we posted the midterm, the midterm solution and the grade distribution.
+				</div>-->
+				<div id="pageHeader">
+					<h1>
+						Midterm Info
+					</h1>
+					<p class="subtleHeading">
+						The CS106A Midterm is Monday Feb 12th from 7pm to 9pm.
+					</p>
+
+				</div>
+				
+				<hr>
+			</div>
+		</div>
+
+	
+
+		<div class="row">
+			<div class="col-sm-12">
+
+				
+
+				<h2>Download Your Midterm</h2>
+
+				<p style="margin-top:20px">
+					<div class="alert alert-success"><b>Download your encrypted midterm:</b> The encrypted midterms are ready to download! (If the links are not live for your exam, check back soon). You should download the exam in advance of arriving at your exam location. <b>Warning:</b> Make sure to download the correct exam -- otherwise the password you are given in your exam room won't match (sad times).</div>
+				</p>
+
+				<p>
+					<table class="table">
+					<tr>
+						<th>Exam Type</th>
+						<th>Download Links</th>
+					</tr>
+					  <tr>
+					  	<td>Regular Seating Mon. 7-9PM</td>
+					  	<td>
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/Midterm/mac-106AMidterm.dmg"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> Mac</a> 
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/Midterm/win-106AMidterm.zip"><span style="margin-left:20px"  class="glyphicon glyphicon-th-large" aria-hidden="true"></span> PC</a>
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/Midterm/linux-106AMidterm.AppImage"><span style="margin-left:20px" class="glyphicon glyphicon-console" aria-hidden="true"></span> Linux</a>
+					  	</td>
+					  </tr>
+					  <tr>
+					  	<td>SCPD, or other (alternate/OAE) <strong>2 HOUR</strong> exam</td>
+					  	<td>
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/MidtermSCPD/mac-106AMidtermSCPD.dmg"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> Mac</a> 
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/MidtermSCPD/win-106AMidtermSCPD.zip">
+					  			<span style="margin-left:20px"  class="glyphicon glyphicon-th-large" aria-hidden="true"></span> PC</a>
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/MidtermSCPD/linux-106AMidtermSCPD.AppImage"><span style="margin-left:20px" class="glyphicon glyphicon-console" aria-hidden="true"></span> Linux</a>
+					  	</td>
+					  </tr>
+					  <tr>
+					  	<td>OAE 150% extra time</td>
+					  	<td>
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/MidtermExtraTime/mac-106AMidtermExtra.dmg"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> Mac</a> 
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/MidtermExtraTime/win-106AMidtermExtra.zip"><span style="margin-left:20px"  class="glyphicon glyphicon-th-large" aria-hidden="true"></span> PC
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/MidtermExtraTime/linux-106AMidtermExtra.AppImage"><span style="margin-left:20px" class="glyphicon glyphicon-console" aria-hidden="true"></span> Linux</a>
+					  	</td>
+					  </tr>
+					  <tr>
+					  	<td>OAE 150% extra time + breaks</td>
+					  	<td>
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/MidtermExtraTimeBreaks/mac-106AMidtermExtraTimeBreaks.dmg"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> Mac </a>
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/MidtermExtraTimeBreaks/win-106AMidtermExtraTimeBreaks.zip"><span style="margin-left:20px"  class="glyphicon glyphicon-th-large" aria-hidden="true"></span> PC </a>
+					  		<a href="{{pathToRoot}}exams/midterm/106AMidterm/MidtermExtraTimeBreaks/linux-106AMidtermExtraTimeBreaks.AppImage"><span style="margin-left:20px" class="glyphicon glyphicon-console" aria-hidden="true"></span> Linux </a>
+					  	</td>
+					  </tr>
+					</table>
+
+					<hr/>
+				</p>
+
+				<h2>Location</h2>
+				<div class="row">
+					
+					<div class="col-xs-6 col-sm-6">
+
+
+						<div class="well">
+						    <b>Last Name: A through J</b>
+						    <br>
+
+						    <span class="sidebaricon glyphicon glyphicon-home" aria-hidden="true"></span>Cubberly Auditorium
+						    <br>
+						    <br>
+
+						    <div class="mapOverlay" onclick="style.pointerEvents='none'"></div>
+						    <div class="google-maps">
+						    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1140.4599867810914!2d-122.16881131208928!3d37.426197737474645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbad670666f4f%3A0xf57308e4d20e0bc4!2sCubberley+Auditorium!5e0!3m2!1sen!2sus!4v1518209092501" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						
+						    </div>
+						</div>		
+					</div>
+
+					
+					<div class="col-xs-6 col-sm-6">
+
+						<div class="well">
+						    <b>Last Name: K through Z</b>
+						    <br>
+
+						    <span class="sidebaricon glyphicon glyphicon-home" aria-hidden="true"></span>Hewlett 200
+						    <br>
+						    <br>
+
+						    <div class="mapOverlay" onclick="style.pointerEvents='none'"></div>
+						    <div class="google-maps">
+						    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.345197243158!2d-122.1750263848679!3d37.42894923975373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2ae177cc91%3A0x5351ffed56456da8!2sWilliam+R.+Hewlett+Teaching+Center%2C+370+Serra+Mall%2C+Stanford%2C+CA+94305!5e0!3m2!1sen!2sus!4v1500400060838" width="600" height="450" style="border:0" allowfullscreen=""></iframe>
+						    </div>
+						</div>		
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<hr/>
+
+						<h2>What to bring</h2>
+						<p> The exam is on computer. You should bring:
+							<ul>
+								<li>Your laptop and charger</li>
+								<li>The device you use for two-step authentication</li>
+								<li>Paper notes (it's open book)</li>
+
+							</ul>
+					</div>
+					
+				</div>
+
+				<p>
+					If you don't have a working laptop let us know AS SOON AS POSSIBLE and we will get you set up with one.
+				</p>
+
+				
+
+				<hr/>
+
+				<h2>Practice Midterm</h2>
+				<p>
+					<div class="row">
+						<div class="col-sm-2"><a href="{{pathToRoot}}exams/macPractice.zip""><span class="glyphicon glyphicon-download" aria-hidden="true" style="font-size: 5em;margin-left:0px"></span><br><span style="margin-left:20px">Mac</span></a>
+						</div>
+						<div class="col-sm-2"><a href="{{pathToRoot}}exams/windowsPractice.zip"><span class="glyphicon glyphicon-download" aria-hidden="true" style="font-size: 5em;margin-left:0px"></span><br><span style="margin-left:25px">PC</span></a>
+						</div>
+						<div class="col-sm-2"><a href="{{pathToRoot}}exams/linuxPractice.AppImage"><span class="glyphicon glyphicon-download" aria-hidden="true" style="font-size: 5em;margin-left:0px"></span><br><span style="margin-left:15px">Linux</span></a>
+						</div>
+						<div class="col-sm-2">
+							<a href="{{pathToRoot}}handouts/13 - Practice Midterm Solutions.pdf"><span class="glyphicon glyphicon-leaf" aria-hidden="true" style="font-size: 5em;margin-left:5px"></span><br>
+					<span style="margin-left:5px">Solutions</span></a>
+						</div>
+
+						
+						
+					</div>
+					<br/>
+				</p>
+				<div class="well">
+				    <p>
+				      On a Windows PC, download the .zip file and completely extract it into another folder. Then open the BlueBook program by double-clicking. If you get a Windows message that says, "Windows protected your PC," click on "More info" and then "Run anyway" (We're working on resolving this!).
+				    </p>
+				    <p>
+				      On a mac, after downloading, select the app and right or control-click. Click on Open. Click on Open again to confirm you want to complete the action.
+				    </p>
+				    <p>
+				      The password for the exam is <code> funkyPenguin</code>. Practice exam submission <b> will not work </b>, but a tool to view your exam answers - as well as solutions - will be released this weekend. If you run into any issues, please email <a href="mailto:brahm@stanford.edu"> Brahm </a> and <a href="mailto:piech@stanford.edu"> Chris </a>.
+				    </p>
+
+				    <b> UPDATE </b>
+
+				    <p>
+				      In order to view your practice midterm answers, download the appropriate exam viewer below: upon opening the application, you should be able to view your answers immediately. 
+				      <ul>
+				          <li>Mac download: <a href="{{pathToRoot}}exams/AnswerViewerMac.zip">Mac</a></li>
+				          <li>PC download: <a href="{{pathToRoot}}exams/AnswerViewerWindows.zip">PC</a></li>
+				          <li>Linux download: <a href="{{pathToRoot}}exams/AnswerViewerLinux.AppImage">Linux</a></li>
+				      </ul> 
+				    </p>
+
+				    <p>
+				        Should you run into any issues, please email <a href="mailto:brahm@stanford.edu"> Brahm </a>. Note that this exam viewer will work <b> only </b> for this Practice Midterm, and not future exams. 
+				    </p>
+				   </div>
+				<hr/>
+
+				<h2>Review Session</h2>
+				<p>
+					The video is available via the link below, which takes you to the same Canvas page where YEAH hours videos are available.
+					<div class="row">
+						<div class="col-sm-2"><a href="{{pathToRoot}}handouts/MidtermReviewSession.pdf"><span class="glyphicon glyphicon-file" aria-hidden="true" style="font-size: 5em;margin-left:0px"></span><br><span style="margin-left:-10px">Slides</span></a>
+						</div>
+						<div class="col-sm-2"><a href="https://canvas.stanford.edu/"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true" style="font-size: 5em;margin-left:0px"></span><br><span style="margin-left:0px">Video</span></a>
+						</div>
+					</div>
+					<br/>
+				</p>
+				
+				<hr />
+
+				<h2>Other Resources</h2>
+				<p>
+					Note: problem 2a) <code>(7 < 9 - 5 &amp; &amp; 3 % 0 == 3)</code> requires a concept known as "short-circuit evaluation" that is <strong>not</strong> on the midterm exam.
+
+					<div class="row">
+						<div class="col-sm-2"><a href="{{pathToRoot}}handouts/14 - More Midterm Practice.pdf"><span class="glyphicon glyphicon-file" aria-hidden="true" style="font-size: 5em;margin-left:0px"></span><br><span style="margin-left:-10px">Extra Practice</span></a>
+						</div>
+
+						<div class="col-sm-2"><a href="{{pathToRoot}}handouts/17 - More Midterm Solutions.pdf"><span class="glyphicon glyphicon-file" aria-hidden="true" style="font-size: 5em;margin-left:0px"></span><br><span style="margin-left:-10px">Extra Solutions</span></a>
+						</div>
+
+						<div class="col-sm-2"><a href="{{pathToRoot}}handouts/15 - Exam Strategies.pdf"><span class="glyphicon glyphicon-file" aria-hidden="true" style="font-size: 5em;margin-left:0px"></span><br><span style="margin-left:0px">Exam Strategies</span></a>
+						</div>
+						
+
+						
+						
+					</div>
+					<br/>
+				</p>
+			
+			</div>
+		</div>
+
+		
+
+
+	
+
+		%include templates/parts/footer.html
+
+	</div>
+
+</body>

@@ -1,0 +1,434 @@
+<head>
+
+<title>CS106A</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF8">
+
+
+<link href="./../plugins/bootstrap-custom/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./../style.css">
+
+<!-- Java Script -->
+<script src="./../plugins/jquery.min.js"></script>
+<script src="./../plugins/moment.min.js"></script>
+<script src="./../plugins/bootstrap-custom/js/bootstrap.min.js"></script>
+<script src="./../plugins/ace/ace.js" type="text/javascript"></script>
+
+
+<!-- Stanford -->
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand brand" href="./..//">CS106A</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+        <!--<li><a href="#">Lectures</a></li>-->
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lectures <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./../lectures/1-Welcome">1 Welcome</a></li>
+            <!--<li><a href="./../lectures/2-ControlFlow">2 Control Flow</a></li>
+            <li><a href="./../lectures/3-Decomposition">3 Decomposition</a></li>
+            <li><a href="./../lectures/4-Variables">4 Variables</a></li>
+            <li><a href="./../lectures/5-ControlFlowRevisited">5 ControlFlowRevisited</a></li>
+            <li><a href="./../lectures/6-NestedLoops">6 NestedLoops</a></li>
+            <li><a href="./../lectures/7-Methods">7 Methods</a></li>
+            <li><a href="./../lectures/8-Animation">8 Animation</a></li>
+            <li><a href="./../lectures/9-Events">9 Events</a></li>
+            <li><a href="./../lectures/10-References">10 References</a></li>
+            <li><a href="./../lectures/11-Memory">11 Memory</a></li>
+            <li><a href="./../lectures/12-TextProcessing">12 TextProcessing</a></li>
+            <li><a href="./../lectures/13-Files">13 FileReading</a></li>
+            <li><a href="./../lectures/14-ArrayLists">14 ArrayLists</a></li>
+            <li><a href="./../lectures/15-Arrays">15 Arrays</a></li>
+            <li><a href="./../lectures/16-Matrix">16 Matrix</a></li>
+            <li><a href="./../lectures/17-HashMaps">17 HashMaps</a></li>
+            <li><a href="./../lectures/18-Interactors">18-Interactors</a></li>
+            <li><a href="./../lectures/19-Classes1">19-Classes-1</a></li>
+            <li><a href="./../lectures/20-Classes2">20-Classes-2</a></li>
+            <li><a href="./../lectures/21-Practice">21-Practice</a></li>
+            <li><a href="./../lectures/22-Internet">22-Internet</a></li>
+             <li><a href="./../lectures/23-SocialNetworks">23 Social Networks</a></li>
+              <li><a href="./../lectures/24-LifeAfterCS106A">24 Life After CS106a</a></li>
+            <li><a href="./../lectures/25-Review1">25 Review 1</a></li>
+            <li><a href="./../lectures/26-Review2">26 Review 2</a></li>-->
+          </ul>
+
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Handouts <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./../handouts/1 - General Information.pdf">1 General Information</a></li>
+            <li><a href="./../handouts/2 - Course Placement.pdf">2 Course Placement</a></li>
+            <!--<li><a href="./../handouts/3 - Using Karel with Eclipse.pdf">3 Using Karel with Eclipse</a></li>
+            <li><a href="./../handouts/4 - Honor Code.pdf">4 Honor Code</a></li>
+            <li><a href="./../handouts/5 - Assignment1.pdf">5 Assignment 1</a></li>
+            <li><a href="./../handouts/6 - Submitting Work.pdf">6 Submitting Work</a></li>
+            <li><a href="./../handouts/7 - Course Communication.pdf">7 Course Communication</a></li>
+            
+            <li><a href="./../handouts/8 - Assignment2.pdf">8 Assignment 2</a></li>
+            <li><a href="./../handouts/debugger.html">9 Debugging</a></li>
+            
+            
+            <li><a href="./../handouts/10 - Assignment 3.pdf">10 Assignment 3</a></li>
+            <li><a href="./../handouts/11 - Strings Examples.pdf">11 String Examples</a></li>
+            <li><a href="./../handouts/12 - Assignment4.pdf">12 Assignment 4</a></li>
+            <li><a href="./../handouts/13 - Practice Midterm Solutions.pdf">13 Practice Midterm Soln</a></li>
+            <li><a href="./../handouts/14 - More Midterm Practice.pdf">14 More Midterm Practice</a></li>
+            <li><a href="./../handouts/15 - Exam Strategies.pdf">15 Exam Strategies</a></li>
+            <li><a href="./../handouts/16 - ArrayList.pdf">16 ArrayLists for Hangman</a></li>
+            <li><a href="./../handouts/17 - More Midterm Solutions.pdf">17 More Midterm Solutions</a></li>
+            <li><a href="./../handouts/18 - Assignment 5.pdf">18 Assignment 5</a></li>
+           
+            <li><a href="./../handouts/19 - Graphics Contest.pdf">19 Graphics Contest</a></li>
+
+
+            <li><a href="./../handouts/20 - Assignment 6.pdf">20 Assignment 6</a></li>
+            <li><a href="./../handouts/21 - Assignment 7.pdf">21 Assignment 7</a></li>-->
+            
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Assignments <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           
+            <li><a href="https://goo.gl/forms/RjR4u0kIKY1uBQfq2">0 Who are you</a></li>
+            <!--<li><a href="./../assn/karel.html">1 Karel</a></li>
+            <li><a href="./../assn/simpleJava.html">2 SimpleJava</a></li>
+            <li><a href="./../assn/breakout.html">3 Breakout</a></li>
+            <li><a href="./../assn/hangman.html">4 Hangman</a></li>
+            <li><a href="./../assn/imageshop.html">5 ImageShop</a></li>
+            <li><a href="./../assn/nameSurfer.html">6 NameSurfer</a></li>
+            <li><a href="./../assn/facepamphlet.html">7 FacePamphlet</a></li>
+            <li class="divider"></li>
+            <li><a href="./../assn/style.html">Style Guide</a></li>
+            <li><a href="./../starterCode/GraphicsContest.zip">Graphics Contest Project</a></li>-->
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Examples <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./../examples/stepUp.html">Step Up</a></li>
+            <!--<li><a href="./../examples/place100.html">Place 100</a></li>
+            <li><a href="./../examples/beeperLine.html">Beeper Line</a></li>
+            <li><a href="./../examples/invert.html">Invert</a></li>
+            <li><a href="./../examples/restaurant.html">Restaurant</a></li>
+            <li><a href="./../examples/carbonDating.html">Carbon Dating</a></li>
+            <li><a href="./../examples/emc2.html">E=MC2</a></li>
+            
+            <li><a href="./../examples/stringArt.html">String Art</a></li>
+            <li><a href="./../examples/averageMethod.html">Average Method</a></li>
+            <li><a href="./../examples/goCenter.html">Center Move Rect</a></li>-->
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sections <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a>None yet</a></li>
+              <!--%include templates/parts/sectionMaterialsDropdownList.html
+              <li class="divider"></li>
+             <li><a href="https://cs198.stanford.edu/cs198/auth/section/SwitchSection.aspx">Late Section Signup</a></li>
+              <li><a href="https://cs198.stanford.edu/cs198/auth/section/RemoteSignup.aspx">Remote SCPD Signup</a></li> 
+              <li><a href="https://cs198.stanford.edu/cs198/auth/section/DropClass.aspx">Drop Section</a></li>
+              <li><a href="https://cs198.stanford.edu/cs198/auth/default.aspx">View My Section</a></li>
+              <li><a href="https://cs198.stanford.edu/cs198/auth/section/ViewSections.aspx">View All Sections</a></li>-->
+          </ul>
+          </ul>
+        </li>
+
+        <!--<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="">Nothing Yet</a></li>
+          </ul>
+        </li>-->
+       
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./../schedule.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Schedule</a></li>
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+	<!-- Main Content -->
+	<div class="container">
+
+		<!-- Header -->
+		<div id="pageHeader">
+			<h1>
+				Instakilo
+			</h1>
+			<p>
+				Written by Julia Lee and Chris Piech. Based on FacePamphlet by Mehran Sahami and Eric Roberts.
+			</p>
+			<!--<p>
+				Worked Example: 
+				<a href="./../projects/emc2.html">RandomSquare</a>
+			</p>-->
+
+		</div>
+		<hr/>
+
+		<div class="row">
+			<div class="col-md-12">
+				<p>
+					In this project, you will build something like Instagram...except that it will be 1000 times more fun and cool because you made it, so we've appropriately named Instakilo! In the process you will make use of three major concepts: Interactors, HashMaps and ArrayLists.
+
+				</p>
+
+				<p>
+					The inital state of the app greets users with the friendly message: "Welcome to Instakilo!"" and loads profile data from a text file into the app. At this point and any point, the user has 3 core actions she/he can take: 
+						<ol>
+							<li>browse a profile with a given name
+							<li>post pictures on the current profile
+							<li>create a new profile associated with a given name
+						</ol>
+				</p>
+				<p>Bellow is an example of the app running. It is showing the profile for the user "Chris Piech" and associated photos.
+				<p>
+					<center>
+						<img style="width:700px" src="./../img/projects/instakilo/fullPhotos.png">	
+					</center>
+				</p>
+				<p>
+					When the program is closed and opened again, previously created profiles, and posted photos should still exist (Whenever a profile is created or picture is posted to a profile, a data file is updated to reflect the current state of all profiles). Each profile consists of a unique name and a list of file names of images that have been posted to that profile.
+				</p>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Milestone 1: Welcome</h2>
+
+				<p>As a warm-up to displaying a profile with images, you should first implement a method <code><b>displayMessage</b></code> that takes a string as a parameter and displays it to the user in the center of the screen. This method will be useful for displaying the welcome message on application start, as well as later when you respond to user input via the interactors. The message should be centered and be given the font MESSAGE_FONT defined in IKConstants. In other words, the method should look something like the following:</p>
+
+<div class="well"><code>
+private void displayMessage(String message) {
+<br/>&nbsp;&nbsp;&nbsp;removeAll(); // clear the screen
+<br/>&nbsp;&nbsp;&nbsp;// create text graphics object with the given message
+<br/>&nbsp;&nbsp;&nbsp;// set the font and location of the graphics object
+<br/>&nbsp;&nbsp;&nbsp;// display the message!
+<br/>}
+</code></div>
+
+<p>
+As a reminder you can use <code>getWidth()</code> to get the width of the applicaiton window. Now call this method to display "Welcome to Instakilo!" when the application starts.<p>
+
+				<p>
+					<center>
+						<img style="width:700px" src="./../img/projects/instakilo/welcome.png">	
+					</center>
+				</p>
+
+
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Milestone 2: Interactors</h2>
+
+				<p>The next part of this assignment is to add the necessary interactors. Create the panel shown bellow with the appropriate combination of JLabel, JButton, and JTextField objects. Don't forget to call <code>addActionListeners()</code></p>
+
+				<p>
+					<br/>
+					<center>
+						<img style="width:400px" src="./../img/projects/instakilo/interactors.png">	
+					</center>
+					<br/>
+				</p>
+
+				<p>Next we want to make sure that we can respond to button clicks. To test that your iteractors are connected correctly display a message, using the <code><b>displayMessage</b></code> method you wrote in the first milestone when a user clicks a button. For now show this message when someone hits the "display" button:
+					<div class="well"><code>
+						"display profile: <i>profileName</i>"
+					</code></div>
+				For example if we type in Bob Marley and hit display message your program should show the following screen:
+				<p>
+					<center>
+						<img style="width:700px" src="./../img/projects/instakilo/message.png">	
+					</center>
+				</p>
+
+
+				Similarly, show this message when someone hits the create button,
+					<div class="well"><code>
+						"create profile: <i>profileName</i>"
+					</code></div>
+				And show this message when someone hits the post button
+					<div class="well"><code>
+						"post profile: <i>profileName</i>"
+					</code></div>
+				</p>
+
+				<p>Later we will replace showing a message with the actual funcitonality!</p>
+
+
+				
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Milestone 3: Database</h2>
+				<p>Now that we have our interactors set up, our next step is to create the appropriate datastructure to store all profiles. For this project, you should use a <code>HashMap&lt;String, ArrayList&lt;String&gt;&gt;</code> to map from profile names to the list of file names for the photos associated with each profile. </p>
+
+				<p>Create the HashMap when the program starts and for now lets put some prefabricated data into it. Make a profile with the name "Bob Marley" who has four image file names (they should be strings): ["bob.jpg", "bobFamily.jpg" "bobYoung.jpg" and "bobSinging.jpg"]</p>
+
+				<p>Bob Marley was one of the most successful singers around the world... so it seems appropriate that he would have a profile on Instakilo</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Milestone 4: Display Profile</h2>
+				<p>It's now time to start showing profiles. If a profile exists in our HashMap with the name entered in the profile text field, then Instakilo should display that profile name and images associated with it; otherwise, you should display the message "No profile exists with that name".
+</p>
+
+			<p></p>
+
+			<p> At the moment our HashMap only contains one profile Bob Marley. When we display Bob Marley's profile it should look like this (we no longer show the message "display profile: Bob Marley"):
+
+				<p>
+					<center>
+						<img style="width:700px" src="./../img/projects/instakilo/bob.png">	
+					</center>
+				</p>
+
+				<h3>Images from filenames</h3>
+				<p>If you have a filename, it is very simple to create the corresponding GImage (A GImage is like a GRect, except that instead of displaying a rectangle it displays an image)
+					<div class="well"><code>GImage <i>myImage</i> = new GImage(<i>fileName</i>);</code></div>
+
+				<h3>Scaling images</h3>
+				<p>The images you display should all be of the height ROW_HEIGHT, but when you load them from file, they could be any size! In order to make them the right size you are going to have to use the GImage scale method. 
+					<div class="well"><code><i>image</i>.scale(<i>fraction</i>);</code></div>
+				For example if you wrote <code>image.scale(0.5)</code> it would make both the width and the heigh of your image half the size. You can get the height of your image using <code><i>image</i>.getHeight();</code> How much should you scale your image by so that it is ROW_HEIGHT?
+				</p>
+
+				<h3>Layout</h3>
+				<p>	Add images one by one starting from the top left. Add images to the current row until you reach the point where adding a new image would extend the image past the right side of the screen. When an image would extend past the right side of the screen, change to placing images on the next row.</p>
+				<p>There is a margin that is size MARGIN pixels between everything.</p>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Milestone 4: Create a Profile</h2>
+
+				<p>when the user clicks "Create", you should first check if a profile already exists with that name. If a profile exists, then display a message to the user ("A profile already exists for that name"). Otherwise, you want to create a new entry in your data hashmap to store this new profile and display it for the user.
+				</p>
+
+<p>For example if you type in Julia Lee in the profileName field and hit the Create button you should end up displaying the new, empty profile for Julia.</p>
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Milestone 5: Post Photo</h2>
+
+				<p>To post a new photo on the current profile, the user will enter an image name in the lower text area (labeled "New photo name:"") and click "Post".
+				1) If no profile is currently displayed, then display the message "Please select a profile before posting a picture"
+				2) If a profile is displayed, first check that an image exists with the given name using the provided method FileSystem.imageFileExists. If true, add the photo name to the ArrayList of photos associated with that profile, redisplay the current profile.
+				</p>
+
+				<p>If we post the photo julia1.jpg to Julia's profile, it should get displayed!</p>
+
+				<p>
+					<center>
+						<img style="width:700px" src="./../img/projects/instakilo/post.png">	
+					</center>
+				</p>
+				<p>Instakilo finds images from the img folder in the Instakilo project. We put a lot of photos there for you to play with. Add your own photos to the img folder so you can create a profile for yourself!</p>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Milestone 6: Load and Save</h2>
+
+				<p>You can save your HashMap to file using the method:
+					<div class="well"><code>
+						FileSystem.saveMap(<i>myMap</i>, <i>fileName</i>);
+						</code></div>
+					And you can load a hash map from file using the method:
+					<div class="well"><code>HashMap&lt;String, &lt;ArrayList&lt;String&gt;&gt; <i>myMap = </i>FileSystem.loadMap(<i>fileName</i>);</code></div>
+					If no hashMap exists with the given fileName, loadMap will return null.
+				</p>
+				<p>
+					Your final milestone is to make changes to your instakilo hashMap persist between runs. Any time you change your hashMap save it to file! When you start the program, load the hashMap from file.
+				</p>
+
+				<p>Thats it! You are done with Instakilo.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Extensions</h2>
+				<p>
+					One feature that made Instagram so popular was that users could apply filters to their photos. Create a feature where a user can click on an image (which will select it) and then hit a button to make the image black and white. Ask the staff for more instructions if you are interested!
+				</p>
+			</div>
+		</div>
+		
+
+
+<div class="row">
+	<div class="col-md-12">
+		<hr>
+
+		<div class="footer">
+			<p class="pull-left">
+				&#169; Stanford 2018 &#124; Created by Chris Piech.
+				CS106A has been developed over decades by many talented teachers. 
+			</p>
+		</div>
+	</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74362126-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	</div>
+</body>
