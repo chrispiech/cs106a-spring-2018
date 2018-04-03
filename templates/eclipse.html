@@ -1,0 +1,194 @@
+<head>
+
+	%include templates/parts/head.html
+
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	%include templates/parts/navBar.html
+
+	<div class="container">
+			
+		<!-- Header -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="pageHeader">
+					<h1>
+						Eclipse
+					</h1>
+					<p class="subtleHeading">
+						Created by your loving CS106A staff (including Julia Daniel, Nick Troccoli, and Michael Chang).
+					</p>
+
+				</div>
+				<!--<div class="alert alert-success"><b>New:</b> The solution to the first practice final, and the second practice final have been posted (Dec 7th). We included some extra practice questions.</div>-->
+				<hr/>
+			</div>
+		</div>
+
+
+      <p>
+
+      </p><p>
+
+	  
+	  <p>In CS106A, we'll be using Stanford's customized version of
+	  Eclipse to build our programs. Eclipse is an enormously popular
+	  industrial-strength Java environment with many
+	  features. Fortunately, Eclipse is also open source -- anyone is
+	  free to change Eclipse to work the way they want. We have taken
+	  advantage of that freedom to install special Stanford features
+	  into Eclipse, tailoring it specifically for CS106A. This
+	  document gives instructions on how to get started using Stanford
+	  Eclipse. Please pay close attention to these instructions and do
+	  not skip steps!</p>
+
+	  <h2>Contents</h2>
+
+	  <a href="#mac">Mac Installation</a> |
+	  <a href="#windows">Windows Installation</a> |
+	  <a href="#configure">Configuring Eclipse for CS106A</a> |
+	  <a href="#help">I need help!</a>
+
+	  <!-- MAC INSTALLATION --> 
+	  <h2 id="mac">Installing Eclipse on a Mac</h2>
+	  <p>Stanford Eclipse will only work on Mac OS X version 10.6 or higher.  If you don't have that version of the operating system, you'll need to either upgrade or do your class work in a public cluster.</p>
+	  <ol>
+	    <li><p></p><a href="https://web.stanford.edu/dept/cs_edu/eclipse/jdk_mac.dmg">Download and install the Java SDK installer for Mac</a></li>
+	    <li><p></p><a href="https://web.stanford.edu/dept/cs_edu/eclipse/eclipse_mac.dmg">Download the Mac version of Eclipse</a></li>
+	    <li><p></p>Double-click on the file <strong>eclipse-mac.tar.gz</strong> to unarchive Eclipse (You can delete <strong>eclipse-mac.tar.gz</strong> afterwards).</li>
+	    <li><p></p>Drag the Eclipse app into the Applications folder on your Mac.</li>
+	    <li><p></p>Drag the Eclipse icon from your Applications folder to your Dock to create a shortcut.</li>
+	    <li><p></p>Click on the icon in the dock to open Eclipse. If you see an error that says Eclipse "can't be opened because it is from an unidentified developer," right-click on the Eclipse icon and select "open" instead. You will be able to open Eclipse without right-clicking from now on.</li>
+	    <li><p></p>Skip to the instructions below to <a href="#configure">configure Eclipse for CS106A</a>.</li>
+	    
+	  </ol>
+<p>
+
+	<hr/><br/>
+
+		<!-- WINDOWS INSTALLATION -->
+	  </p><h2 id="windows">Installing Eclipse in Windows</h2>
+	  <p>Our version of Eclipse will run on Windows 7 (2009) or higher. In the very unlikely event you have an older version of Windows on your computer, you will need to either upgrade or do your class work in one of the public computer clusters. You can check your version of Windows using <a href="https://support.microsoft.com/en-sg/help/13443/windows-which-operating-system"> these instructions</a>.</p>
+	  <ol>
+	    <li><strong>Uninstall previous versions of the
+	    Java Runtime Environment (JRE)</strong>. Before installing a new version of the JRE, we
+	    recommend that you remove any older copies that may be
+	    installed on your system.
+	      <p>
+	      </p><ul>
+		<li>
+		  If you have Windows 7 or 8, do the following: Click
+		  on <strong>Start</strong>, then click on <strong>Control
+		   Panel</strong>, then select <strong>Programs and
+		  Features</strong>.
+		  <p>
+		  If you have Windows 10, do the following: Click
+		  on <strong>Start</strong> (the Windows icon in the lower
+		  left-hand corner), then click
+		  on <strong>Settings</strong> (the gear-shaped icon),
+		  then select <strong>Apps &amp; Features</strong>.
+		</p></li> 
+		<p>
+		</p><li>From the list of programs you see, uninstall
+		any occurrences of Java/J2SE Runtime Environment, Java
+		SDK, Java SE Development Kit or Java Update. Note that the
+		exact program name may 
+		be slightly different or include a version number, but you
+		generally want to remove anything that includes the text:
+		Java/J2SE Runtime Environment, Java SDK, Java SE
+		Development Kit or Java Update. To remove a program, click
+		on the program name to 
+		highlight it and click the the <strong>Uninstall</strong>
+		button.</li> 
+		<p>
+	      </p></ul>
+	    </li>
+	    <p>
+	    </p><li><a href="https://web.stanford.edu/dept/cs_edu/eclipse/jdk_win64.exe">Download and install the JRE for Windows.</a>
+		<br>After clicking this link a prompt
+	    will appear to ask you whether you want to run or save the
+	    file. Click <strong>Run</strong> to begin the download and
+	    installation process. If you did not get a prompt to run the
+	    file after the download completed, you should double-click the
+	    file you downloaded to run it manually. If a subsequent
+	    security warning dialog box appears, click <strong>Run</strong>
+	    (or <strong>Yes</strong>) to continue with the
+	    installation. The Java JRE installation program should
+	    begin. Do a Typical installation (just use the default setting
+	    in the installation process), and follow the rest of the
+	    instructions given in order to complete your
+	    installation.</li> 
+	    <p>
+
+	    </p><li><a href="https://web.stanford.edu/dept/cs_edu/eclipse/eclipse_win64.zip">Download Eclipse.</a>
+<br>Save the downloaded file to somewhere on your hard drive.  This may
+  take a little while as the file is rather large.
+</li>
+	    <p>
+	    </p><li>Unzip/extract the contents of the file by right-clicking
+	    on the folder you just downloaded, selecting
+	    the <strong>Extract All...</strong> option and
+	    typing <strong>C:\Program Files</strong> as the location to
+	    extract the files to. 
+	      Then continue following the steps in the extraction process. 
+</li>
+	    <p>
+	    </p><li>Create a shortcut to Eclipse on your Desktop for easy
+	    access — Open the <strong>C:\Program
+	    Files\eclipse</strong> directory, and right-click and
+	    drag the eclipse.exe file (the Eclipse application) to your
+	    desktop and then select the option Create shortcut here.</li>
+	    <p>
+	    </p><li>Continue to the instructions below to <a href="#configure">configure Eclipse for CS106A</a>.</li>
+	  </ol>
+
+	    <p>
+	    Note: If you installed the 64 bit versions of the software, and
+	    find that you have issues running Eclipse, we recommend that
+	    you uninstall the 64 bit versions of the both the JRE and
+	    Eclipse and install the 32 bit versions of both: 
+	    <a href="https://web.stanford.edu/dept/cs_edu/eclipse/jdk_win.exe">JRE 32 bit
+	    version for Windows</a>, <a href="https://web.stanford.edu/dept/cs_edu/eclipse/eclipse_win.zip">Eclipse 32 bit version for Windows</a>.
+	    </p><p>
+
+	  </p>
+
+	  <hr/><br/>
+
+	<!-- CONGIFURING STANFORD VERSION -->
+	  </p><h2 id="configure">Configuring Eclipse for CS106A (both Mac and Windows)</h2>
+	  <p>Once you have Eclipse installed on your computer, there are a few CS106A-specific changes you need to make so that you can access some special Stanford features, like submitting assignments. The following instructions apply to all operating systems, although the screenshots are from a Mac.</p>
+	  <ol>
+	  	<li><p></p>Open Eclipse if you haven't already. When you run Eclipse for the first time, you may get a screen that looks like this:<br>
+	  		<img style="max-width:100%"src="{{pathToRoot}}img/eclipse/step0.png" alt="Eclipse Workspace Launcher dialog"><br>
+	  		A workspace is just a directory that Eclipse will use to place new projects in. In 106A you won't have to make any new projects from scratch. We will always give you skeleton projects for your assignments, so you don't need to worry about where the workspace is. The suggested location is fine. Click the <strong>Use this as the default and do not ask again</strong> checkbox, and then click OK.
+	    </li>
+      <li><p></p>Once Eclipse has started, you can close the "Welcome" tab using the "X" in the top left.</li>
+      <li><p></p>Click Help -&gt; Install New Software.</li>
+      <li><p></p>In the "Work with" text box, type <strong>https://web.stanford.edu/dept/cs_edu/eclipse/plugin</strong> and press Enter.</li>
+      <li><p></p>Click "Select All," then click Next.<br><img style = "max-width:100%" src="{{pathToRoot}}img/eclipse/step1.png" style="max-width:100%" alt="Eclipse Install Software dialog"></li>
+      <li><p></p>Click Next again.<br><img src="{{pathToRoot}}img/eclipse/step2.png" style="max-width:100%" alt="Eclipse Install Details dialog"></li>
+      <li><p></p>Click "I accept the terms of the license agreement," then click Finish.<br><img src="{{pathToRoot}}img/eclipse/step3.png" style="max-width:100%" alt="Eclipse License Agreement dialog"></li>
+      <li><p></p>Click OK when you see the warning about installing unsigned content.<br><img src="{{pathToRoot}}img/eclipse/step4.png" style="max-width:100%" alt="Eclipse Security Warning dialog"></li>
+      <li><p></p>Click Yes when asked to restart Eclipse.</li>
+      <li><p></p>After restarting, you should see a "Stanford Menu" in the top bar, as well as several new icons in your top toolbar area.<br><img src="{{pathToRoot}}img/eclipse/step5.png" style="max-width:100%" alt="Eclipse with Stanford menu"></li>
+      <li><p></p>Go to Eclipse -&gt; Preferences to open the Preferences window. In the dropdowns on the left, expand Run/Debug, and click Perspectives. Set "Open the associated perspective when an application suspends" to Never, as shown below, and click Apply and Close.<br><img src="{{pathToRoot}}img/eclipse/step6.png" style="max-width:100%" alt="Eclipse Debugger Preferences dialog"></li>
+      <li><p></p>
+      	Now that you have Eclipse loaded and configured, your next step is to add a project to your workspace by importing a skeletal framework that we provide with each assignment called a starter project. Using starter projects makes your life much easier by allowing you to ignore the many details involved in creating a project from scratch.  Every assignment will include a starter project for each problem, and your first task for each assignment will be to download the starter project from the class website and then import it into your workspace.  The details for doing so are described in the handout "Using Karel with Eclipse".<p></p> 
+      </li>
+    </ol>
+
+	<h2 id="help">Having trouble with your installation?</h2>
+	<p style="padding-bottom: 10px;">Check out this doc for 
+	      <a class="popup" href="https://docs.google.com/document/d/10EdLPNaRzwqE6A-3SzhS6fEIW6iIoCrqFXcCCeakJXE/edit?usp=sharing" target="_blank">common
+		Eclipse errors and issues / Troubleshooting</a>, email the Head TA or stop by their Office Hours, or stop by the LaIR.  During the first week, you can also stop by the <strong>Eclipse Setup Session on Wednesday 4/4/18 7-9 PM in the LaIR (first floor of Tresidder).</strong>
+	</p>
+
+	%include templates/parts/footer.html
+
+</div>
+</body>
+
+ 
