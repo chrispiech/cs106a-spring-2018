@@ -82,12 +82,23 @@
 <!-- Week 2 -->
 <tr>
 <td class="calendarWeekCell">2</td>
+
 <%
   data = {
     "lectureNumber" : 4,
     "date" : "Apr 9th",
     "name" : "Intro to Java",
-    "notes2" : "Read: Java Ch 1-3"
+    "notes2" : "Read: Java Ch 1-3",
+    "slides": "lectures/4-Variables/4-Variables.pptx",
+    "pdf": "lectures/4-Variables/4-Variables.pdf",
+    "code": "lectures/4-Variables/src",
+    "zip": "lectures/4-Variables/Lecture4.zip",
+    "practice": [
+      {"link":"basics/FearTheTree","name":"FearTheTree"},
+      {"link":"expressions/expressionsNumbers1","name":"ExpressionsNumbers1"},
+      {"link":"expressions/expressionsStrings1","name":"ExpressionsStrings1"},
+      {"link":"basics/InchesToCentimeters","name":"InchesToCentimeters"}
+    ]
   }
   include('templates/parts/scheduleDay.html', data=data)
 
