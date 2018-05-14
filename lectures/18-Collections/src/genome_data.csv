@@ -1,0 +1,37 @@
+Sweden,SE,10,0.0449,0.00825,0
+Norway,NO,3,0.0444,-0.000989,0
+Denmark,DK,1,0.0329,0.00796,0
+Finland,FI,1,0.056,0.0241,0
+Romania,RO,14,0.000334,0.0451,1
+Russian Federation,RU,6,0.0421,0.0432,1
+Turkey,TU,4,-0.0326,0.0807,1
+Bulgaria,BU,2,-0.00704,0.0437,1
+Latvia,LT,1,0.0671,0.051,1
+Ukraine,UR,1,0.0414,0.0642,1
+Serbia and Montenegro,SM,44,-0.00127,0.0521,2
+Bosnia and Herzegovina,BH,9,0.0166,0.0506,2
+Croatia,CR,8,0.0171,0.0471,2
+Greece,GR,8,-0.0321,0.0464,2
+Macedonia,MC,4,-0.0082,0.0453,2
+Albania,AL,3,-0.0164,0.0528,2
+Kosovo,KO,2,-0.00932,0.0651,2
+Slovenia,SL,2,0.0226,0.0449,2
+Poland,PO,22,0.0442,0.042,3
+Hungary,HU,19,0.02,0.0365,3
+Czech Republic,CZ,11,0.0286,0.0354,3
+Spain,SP,136,-0.0243,-0.0321,4
+Portugal,PT,128,-0.0282,-0.0332,4
+Italy,IT,219,-0.034,0.0234,5
+Austria,AU,14,0.0183,0.0194,5
+Slovakia,SK,1,-0.0495,0.0355,5
+Swiss-French,SW,125,0.00575,-0.0028,6
+Swiss-German,SW,84,0.01,0.00224,6
+Swiss-Italian,SW,13,-0.0173,0.00806,6
+France,FR,91,0.00219,-0.0138,7
+Germany,GE,71,0.0247,0.00852,7
+Belgium,BE,43,0.0177,-0.00367,7
+Netherlands,NE,17,0.0305,-0.00296,7
+United Kingdom,UK,200,0.0266,-0.0114,8
+Scotland,SC,5,0.0293,-0.00902,8
+Ireland,IR,61,0.0308,-0.0224,9
+Cyprus,CY,4,-0.0608,0.0549,9
