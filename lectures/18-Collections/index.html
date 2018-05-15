@@ -21,7 +21,6 @@
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700' rel='stylesheet' type='text/css'>
 
-
 </head>
 <body>
 
@@ -216,86 +215,76 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-	<!-- Main Content -->
 	<div class="container">
 
+		
+			
 		<!-- Header -->
-		<div id="pageHeader">
-			<h1>
-				Stamp Tool
-			</h1>
-			<p>
-				Problem written by a mystery CS106A Lecturer.
-			</p>
-
-		</div>
-		<hr/>
-
 		<div class="row">
-			<div class="col-md-12">
-				<p>
-					Write a program that has a GRect (which represents a stamp) follow a users mouse around and draw a GRect on the screen centered around the mouse when the user clicks </p>
+			<div class="col-sm-12">
+				<!--<div class="alert alert-success"><b>New materials!</b> On Wed (Nov 9th) we posted the midterm, the midterm solution and the grade distribution.
+				</div>-->
+				<div id="pageHeader">
+					<h1>
+						Lecture 18: Collections
+					</h1>
+					<p class="subtleHeading">
+						May 14th, 2018
+					</p>
 
-				<p>
-					<center>
-						<img style="width:500px" src="//web.stanford.edu/class/cs106a/img/projects/stampTool/demo.png">	
-					</center>
-				</p>
-
-				<p>Rember that since you need to have a variable that you can change inside a mouse event class (the GRect which represents your stamp) you are going to have to declare it as an istance variable. Ask one of the teachers to explain this if it doesn't make sense.</p>
-
+				</div>
 				
+				<hr>
 			</div>
 		</div>
-		
+
+	
+
 		<div class="row">
-			<div class="col-md-12">
-				<h2>Solution</h2>
+			<div class="col-sm-12">
+				<h3>Class Announcements</h3>
+				<p>
+					<div class="well">
+						<b>Assignment 5 (ImageShop) is out</b>. See <a href="//web.stanford.edu/class/cs106a/assn/imageshop.html">the Assignment 5 page</a> for details.
+						<br />	
+					</div>
+				</p>
+				<br/>
+				<h3>Learning Goals </h3>
+				<p>
+					<div class="well">
+					The goal of today's class is for you to be able to write programs that can use any of the data structures we've learned together to solve more complex problems.
+				</div>
+				</p>
+				<br/>
+				<h3>Lecture Materials </h3>
+				<p>
+					<div class="row">
+						<div class="col-sm-2"><a href="//web.stanford.edu/class/cs106a/lectures/18-Collections/18-Collections.key"><span class="glyphicon glyphicon-blackboard" aria-hidden="true" style="font-size: 5em;margin-left:0px"></span><br><span style="margin-left:4px">Keynote</span></a>
+						</div>
+						<div class="col-sm-2"><a href="//web.stanford.edu/class/cs106a/lectures/18-Collections/18-Collections.pdf"><span class="glyphicon glyphicon-file" aria-hidden="true" style="font-size: 5em;margin-left:0px"></span><br><span style="margin-left:3px">Slides Pdf</span></a>
+						</div>
+						<div class="col-sm-2">
+							<a href="//web.stanford.edu/class/cs106a/lectures/18-Collections/src"><span class="glyphicon glyphicon-leaf" aria-hidden="true" style="font-size: 5em;margin-left:2px"></span><br>
+					Lecture Code</a>
+						</div>
+						<div class="col-sm-2">
+							<a href="//web.stanford.edu/class/cs106a/lectures/18-Collections/Lecture18.zip"><span class="glyphicon glyphicon-leaf" aria-hidden="true" style="font-size: 5em;margin-left:5px"></span><br>
+					Eclipse Project</a>
+						</div>
+						
+						
+					</div>
+				</p>
+			</div>
+		</div>
 
 
-<pre id="editor" style="height:470px">public class StampTool extends GraphicsProgram {
-
-	private static final int SIZE = 50;
-	
-	private GRect stamp = new GRect(SIZE, SIZE);
-	
-	public void run() {
-		stamp.setColor(Color.BLUE);
-		stamp.setFilled(true);
-		add(stamp);
-		addMouseListeners();
-	}
-	
-	public void mouseClicked(MouseEvent e) {
-		int x = e.getX() - SIZE / 2;
-		int y = e.getY() - SIZE / 2;
 		
-		GRect r = new GRect(SIZE, SIZE);
-		r.setFilled(true);
-		add(r, x, y);
-	}
+
+
 	
-	public void mouseMoved(MouseEvent e) {
-		int x = e.getX() - SIZE / 2;
-		int y = e.getY() - SIZE / 2;
-		stamp.setLocation(x, y);
-	}
-}</pre>
-    
-<script src="//web.stanford.edu/class/cs106a/plugins/ace/ace.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    var editor = ace.edit("editor");
-   editor.setTheme('ace/theme/eclipse');
-   editor.getSession().setMode("ace/mode/java");
-   editor.setReadOnly(true);
-   editor.setShowPrintMargin(false);
-   editor.renderer.setShowGutter(false); 
-    /*editor.setTheme("ace/theme/eclipse");
-    editor.getSession().setMode("ace/mode/java");*/
-</script>
-	</div>
-	</div>
-		
+
 
 
 <div class="row">
@@ -323,4 +312,5 @@
 </script>
 
 	</div>
+
 </body>
